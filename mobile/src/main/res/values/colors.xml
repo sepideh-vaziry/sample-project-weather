@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#030632</color>
+    <color name="colorPrimaryDark">#030632</color>
+    <color name="colorAccent">#030632</color>
+
+    <!-- General Color -->
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#005CE0</color>
+    <color name="blue_light">#32D0FC</color>
+
+    <!-- text resource -->
+    <color name="primaryTextColor">#FFFFFF</color>
+    <color name="secondaryTextColor">#99FFFFFF</color>
+
+    <!-- evening resources -->
+    <color name="eveningTopGradientColor">#030632</color>
+    <color name="eveningBottomGradientColor">#4000A3</color>
+
+    <!-- morning resources -->
+    <color name="morningTopGradientColor">#32D0FC</color>
+    <color name="morningBottomGradientColor">#005CE0</color>
+
+    <!-- noon resources -->
+    <color name="noonTopGradientColor">#FC9F32</color>
+    <color name="noonBottomGradientColor">#D33A3A</color>
+
+    <!-- dawn resource -->
+    <color name="dawnTopGradientColor">#1C7891</color>
+    <color name="dawnBottomGradientColor">#162A2F</color>
+
+    <!-- night resource -->
+    <color name="nightTopGradientColor">#35416C</color>
+    <color name="nightBottomGradientColor">#151515</color>
+
+    <!-- City List Fragment -->
+    <color name="city_list_background">@color/blue_light</color>
+    <color name="city_list_item_text_color">@color/primaryTextColor</color>
+    <color name="city_list_item_line_background">@color/white</color>
+
+    <!-- Home Fragment -->
+    <color name="home_button_location_background_color">#37FFFFFF</color>
+
+    <!-- Daily Info Item -->
+    <color name="daily_info_item_selected_background">#37FFFFFF</color>
+
+</resources>

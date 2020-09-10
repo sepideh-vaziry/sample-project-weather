@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMarginLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMarginRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMarginTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <!-- *************************************************************************************** -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeftOfImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.05" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageWeather"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintRight_toRightOf="@+id/guidelineLeftOfImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <!-- *************************************************************************************** -->
+    <TextView
+        android:id="@+id/textCurrentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/home_current_temp_text_size"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineMarginLeft"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMarginTop" />
+
+    <TextView
+        android:id="@+id/textMinMaxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="@dimen/home_current_temp_minmax_text_size"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineMarginLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textCurrentTemp" />
+
+    <TextView
+        android:id="@+id/buttonLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_vertical_margin"
+        android:background="@drawable/button_location_background"
+        android:padding="@dimen/home_button_location_padding"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/home_current_button_location_text_size"
+        android:drawableLeft="@drawable/pin"
+        android:drawablePadding="@dimen/home_button_location_icon_padding"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineMarginLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textMinMaxTemp" />
+
+    <!-- *************************************************************************************** -->
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierBottomOfCurrentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="imageWeather, buttonLocation" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHourlyInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_vertical_margin"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineMarginLeft"
+        app:layout_constraintRight_toRightOf="@+id/guidelineMarginRight"
+        app:layout_constraintTop_toBottomOf="@+id/barrierBottomOfCurrentInfo" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDailyInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_vertical_margin"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineMarginLeft"
+        app:layout_constraintRight_toRightOf="@+id/guidelineMarginRight"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewHourlyInfo" />
+
+    <!-- *************************************************************************************** -->
+    <ProgressBar
+        android:id="@+id/progressbarLoading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

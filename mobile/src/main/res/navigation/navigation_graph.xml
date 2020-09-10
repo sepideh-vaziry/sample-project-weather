@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.weather.view.activity.home.HomeFragment"
+        android:label="Fragment Home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/actionShowCityList"
+            app:destination="@+id/fragmentCityList"
+            app:enterAnim="@anim/enter_from_bottom"
+            app:popExitAnim="@anim/exit_out_bottom"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentCityList"
+        android:name="com.example.weather.view.activity.city.CityListFragment"
+        android:label="Fragment City List"
+        tools:layout="@layout/fragment_city_list" >
+
+    </fragment>
+
+</navigation>

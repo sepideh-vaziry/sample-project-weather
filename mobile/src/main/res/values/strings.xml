@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- General -->
+    <string name="app_name">Weather</string>
+    <string name="general_failed_message">The operation encountered an error</string>
+    <string name="general_get_data_failed_message">An error occurred in receiving information</string>
+    <string name="list_empty_message">No information to display</string>
+
+    <!-- City List Fragment -->
+    <string name="city_list_load_failed_message">@string/general_get_data_failed_message</string>
+    
+    <!-- Home Fragment -->
+    <string name="home_location_error_message">Please Select Your Location</string>
+    <string name="home_button_location">Insert location</string>
+    <string name="home_temp_format">%s°</string>
+    <string name="home_temp_minmax_format">%s°/%s°</string>
+    <string name="home_load_data_failed">@string/general_failed_message</string>
+
+    <!-- Hourly Info Item -->
+    <string name="hourly_info_item_temp_format">%s°</string>
+    <string name="hourly_info_item_time_format">%s%s</string>
+    <string name="hourly_info_item_tomorrow">Tomorrow</string>
+    <string name="hourly_info_item_am">am</string>
+    <string name="hourly_info_item_pm">pm</string>
+
+    <!-- Daily Info Item -->
+    <string name="daily_info_item_temp_format">%s°/%s°</string>
+
+</resources>

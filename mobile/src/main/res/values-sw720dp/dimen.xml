@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Common text size -->
+	<dimen name="textsize_title_very_big">38sp</dimen>
+	<dimen name="textsize_title_big">28sp</dimen>
+	<dimen name="textsize_title">24sp</dimen>
+	<dimen name="textsize_very_big">22sp</dimen>
+	<dimen name="textsize_big">20sp</dimen>
+	<dimen name="textsize_normal">18sp</dimen>
+	<dimen name="textsize_small">16sp</dimen>
+	<dimen name="textsize_very_small">14sp</dimen>
+	<dimen name="textsize_tiny">12sp</dimen>
+	<dimen name="textsize_very_tiny">10sp</dimen>
+
+	<!-- City List Fragment -->
+	<dimen name="city_list_item_padding">16dp</dimen>
+	<dimen name="city_list_item_line_height">1dp</dimen>
+
+	<dimen name="city_list_item_text_size">@dimen/textsize_normal</dimen>
+
+	<!-- Home Fragment -->
+	<dimen name="home_vertical_margin">24dp</dimen>
+	<dimen name="home_button_location_padding">12dp</dimen>
+	<dimen name="home_button_location_icon_padding">8dp</dimen>
+	<dimen name="home_button_location_corner_radius">2dp</dimen>
+
+	<dimen name="home_current_temp_text_size">@dimen/textsize_title_very_big</dimen>
+	<dimen name="home_current_temp_minmax_text_size">@dimen/textsize_very_big</dimen>
+	<dimen name="home_current_button_location_text_size">@dimen/textsize_normal</dimen>
+
+	<!-- Hourly Info Item -->
+	<dimen name="hourly_info_item_width">72dp</dimen>
+	<dimen name="hourly_info_item_vertical_margin">8dp</dimen>
+
+	<dimen name="hourly_info_item_text_size">@dimen/textsize_small</dimen>
+
+	<!-- Daily Info Item -->
+	<dimen name="daily_info_item_margin">16dp</dimen>
+	<dimen name="daily_info_item_horizontal_margin">8dp</dimen>
+
+	<dimen name="daily_info_item_text_size">@dimen/textsize_normal</dimen>
+
+</resources>

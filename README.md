@@ -1,11 +1,13 @@
 # Sample-Project-Weather
-This is a simple Weather project, which we can see the weather in any city in Iran.
+This project showcases a simple weather Android application built using Clean Architecture principles, promoting separation of concerns and maintainability.
 
-# Languages, architecture, libraries and tools used
+
+
+# Languages, architecture, libraries, and tools used
 
     Language: Kotlin
     Architecture: Android Clean Architecture
-    Multi threading: Kotlin Coroutine
+    Multithreading: Kotlin Coroutine
     Android Jetpack: ViewModel, LiveData, Navigation, viewBinding
     Dependency Injection: Hilt
     Networking: Retrofit

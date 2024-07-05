@@ -3,7 +3,7 @@ This project showcases a simple weather Android application built using Clean Ar
 
 
 
-# Languages, architecture, libraries, and tools used
+### Languages, architecture, libraries, and tools used
 
     Language: Kotlin
     Architecture: Android Clean Architecture
